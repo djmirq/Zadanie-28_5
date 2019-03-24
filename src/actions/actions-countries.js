@@ -4,17 +4,16 @@ export const DELETE_COUNTRY = "DELETE_COUNTRY";
 export const SEARCH_COUNTRIES = "SEARCH_COUNTRIES";
 export const SET_CONTINENT = "SET_CONTINENT";
 
-// listowanie wszystkich dostępnych państw:
 export function getCountries() {
   return {
-      type: GET_COUNTRIES
-  }
+    type: GET_COUNTRIES
+  };
 }
-// usuwanie państwa
+
 export function deleteCountry(id) {
   return {
-      type: DELETE_COUNTRY,
-      id
+    type: DELETE_COUNTRY,
+    id
   };
 }
 
